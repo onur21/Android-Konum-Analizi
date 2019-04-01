@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bitirme</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_map_yonlendirme">Map</string>
+    <string name="hello_world">Haritadan iki konuma dokunun</string>
+    <string name="distance_time">Mesafe</string>
+    <string name="title_activity_maps_data">Map</string>
+    <string name="title_activity_maps_konum_analiz">Map</string>
+</resources>

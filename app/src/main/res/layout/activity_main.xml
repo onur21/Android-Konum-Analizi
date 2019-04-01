@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.onur.bitirme.MainActivity">
+
+    <Button
+        android:id="@+id/btnKayit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btngiris"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="57dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Kaydol" />
+
+    <TextView
+        android:id="@+id/txtsifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifre :"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/sifre"
+        android:layout_alignBottom="@+id/sifre"
+        android:layout_alignLeft="@+id/txtemail"
+        android:layout_alignStart="@+id/txtemail" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sifre"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="29dp"
+
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/txtemail"
+        android:layout_toRightOf="@+id/txtemail"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btngiris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/btnSifre"
+        android:layout_marginBottom="142dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Giriş Yap"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btngiris"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:textColor="@android:color/black"
+
+        android:hint="Şifre(En Az 6 Karakter)"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/back"
+        android:text="Şifremi Unuttum" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/email"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
